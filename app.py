@@ -63,7 +63,7 @@ if check_password():
                 data = response.json()
                 
                 # Display the output received from the API
-                st.write(f"Respuesta: {data['output']}")
+                st.write(f"Respuesta: {data['output'][0]}")
 
                 data_register = {
                     "question": user_input,
